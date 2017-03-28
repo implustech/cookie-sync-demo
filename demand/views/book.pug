@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  //- img(src='http://localhost:3001/cookie' style="width: 1px; height: 1px")
+  iframe(src=`http://localhost:3001/cookie?link=http://localhost:3000/books\/${id}&img=${imgsrc}` style='display: none;')
+
+  img(src=`${imgsrc}`)
+  h3 #{name}
+  h4 #{author}
+  span #{description}

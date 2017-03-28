@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 You might have interest:
+  hr
+  //- .ad #{ad}
+  //- #ad #{script}
+  //- script.
+    !{script}
+  iframe(src='http://localhost:3031/ads' style="border: 0px;")
